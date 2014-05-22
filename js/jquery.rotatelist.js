@@ -6,7 +6,7 @@
 *
 * Licensed under The MIT License
 *
-* @version 0.1.0
+* @version 0.2.0
 * @since 21.05.2014
 * @author Valdinei Reis da Silva
 * @documentation valdineireis.com.br
