@@ -1,6 +1,6 @@
-# jQuery RotateList - Is a plugin that automatically rotates lists
+# jQuery RotateList
 
-[http://valdineireis.com.br](http://valdineireis.com.br)
+[http://valdineireis.com.br](http://valdineireis.com.br) - Is a plugin that automatically rotates lists
 
 ## Version
 
