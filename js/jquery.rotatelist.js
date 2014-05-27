@@ -57,8 +57,8 @@
             trs             = self.children(),
             started         = false,
             counter         = 0,
-            rotationNumber  = 0,
-            startedFunction = false;
+            rotationNumber  = 0, 	 /* número de vezes que a rolagem foi feita */
+            startedFunction = false; /* veirica se a função externa foi iniciada */
         
         var listSize = function() {
             return trs.size();
@@ -156,14 +156,14 @@
     }
     
     $.fn.rotateList.defaults = {
-        minLines           : 5, /* quantidade minima de linhas para rotação */
-        speed              : 2000, /* velocidade da rotação */
+        minLines           : 5, 		/* quantidade minima de linhas para rotação */
+        speed              : 2000, 		/* velocidade da rotação */
         colorSelectedRow   : '#F1F1F1', /* cor da linha selecionada */
         colorSelectedText  : '#000000', /* cor do texto da linha selecionada */
         colorBackgroundRow : '#FFFFFF', /* cor de fundo das linha */
         colorText          : '#444444', /* cor do texto */
-        externalFunction   : null, /* inicia uma função externa ao concluir rotação */
-        stopOnComplete     : false /* parar ao completar rotação */
+        externalFunction   : null, 		/* inicia uma função externa ao concluir rotação */
+        stopOnComplete     : false 		/* parar ao completar rotação */
     }
     
 })(jQuery);
