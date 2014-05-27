@@ -5,7 +5,7 @@
 ## Version
 
 ```
-@version  0.2.0
+@version  0.2.1
 @since    2014.05.22
 @author   Valdinei Reis
 @doc      valdineireis.com.br
@@ -64,42 +64,28 @@ stopOnComplete      : false             // Parar ao completar rotação.
 ```
 
 ```js
-$.rotateList('table#rotated tbody tr');
+$('table#rotated tbody').rotateList();
 ```
 
 ## Functions
 
 ```js
 // Rotaciona as linhas da tabela
-$.rotateList('table#rotated tbody tr');
-
-// Define a quantidade mínima de linhas para rotacionar
-$.rotateList('table#rotated tbody tr', {'minLines' : 5});
-
-// Define a velocidade de rotação em milesegundos
-$.rotateList('table#rotated tbody tr', {'speed' : 2000});
-
-// Define a cor da linha selecionada
-$.rotateList('table#rotated tbody tr', {'colorSelectedRow' : '#F1F1F1'});
-
-// Define a cor de fundo das linhas
-$.rotateList('table#rotated tbody tr', {'colorBackgroundRow' : '#FFFFFF'});
-
-// Define a cor do texto das linhas
-$.rotateList('table#rotated tbody tr', {'colorText' : '#444444'});
-
-// Define a cor do texto da linha selecionada
-$.rotateList('table#rotated tbody tr', {'colorSelectedText' : '#000000'});
-
-// Define a inicialização de uma função externa, após completar a primeira rotação
-$.rotateList('table#rotated tbody tr', {'externalFunction' : nomeDaFuncao});
-
-// Define que a rotação não irá parar quando completar a primeira rotação
-$.rotateList('table#rotated tbody tr', {'stopOnComplete' : false});
-
-// Define que a lista irá rodar apenas uma vez
-$.rotateList('table#rotated tbody tr', {'stopOnComplete' : true});
+$('#rotated tbody').rotateList({
+    minLines           : 2,		// Define a quantidade mínima de linhas para rotacionar
+    stopOnComplete     : false,		// Define se a rotação irá parar quando completar a primeira rotação
+    externalFunction   : nomeDaFuncao,	// Define a inicialização de uma função externa, após completar a primeira rotação
+    speed              : 1000,		// Define a velocidade de rotação em milesegundos
+    colorSelectedRow   : '#F1F1F1',	// Define a cor da linha selecionada
+    colorSelectedText  : '#888',	// Define a cor do texto da linha selecionada
+    colorBackgroundRow : '#FFF',	// Define a cor de fundo das linhas
+    colorText          : '#000'		// Define a cor do texto das linhas
+});
 ```
+
+## Run it
+Run it in [JSFIDDLE](http://jsfiddle.net/valdineireis/sx93v/).
+
 
 ## Licence
 
